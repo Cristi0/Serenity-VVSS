@@ -53,5 +53,6 @@ public class CoffeePage extends PageObject
     public void confirmEdit()
     {
         confirmEditButton.click();
+
     }
 }
