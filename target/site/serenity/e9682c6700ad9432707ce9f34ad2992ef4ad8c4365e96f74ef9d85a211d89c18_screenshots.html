@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a6893a08c443bb4e782a58dad71438240b9ccda9744f4eeb70899552072ba8ca.html">Edit File Name</a></span>
+                > <span class="truncate-60"><a
+                    href="e9682c6700ad9432707ce9f34ad2992ef4ad8c4365e96f74ef9d85a211d89c18.html">Edit file name </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-05-2020 21:48</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Edit File Name</span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Edit file name
+                                    <span class="related-issue-title">(#EditFile-1)</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Reload page<br>Enable edit<br>Open modal: &lt;id&gt;<br>Enter new name: &lt;name&gt;<br>Confirm edit: &lt;valid&gt;</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_d61f6ba5e35107e4697f5630ed784b1b0a3d473ad331808a470816a5aeb93890.png" title="Reload page" width="960"/>
+                <img src="scaled_f456aab269849459904714ae684dadc90c272ff61dfae3bb030c5a0fee3eb156.png" title="Enable edit" width="960"/>
+                <img src="scaled_82bb4d17f942dada103f308cbf9c11fefebd5aa7fcefca492e42d552ca29bc51.png" title="Open modal: f320" width="960"/>
+                <img src="scaled_2f272a31f96345227f3e60d1261a6e558ba464e87fd08d7841b66fdc2e9c4549.png" title="Enter new name: a/c" width="960"/>
+                <img src="scaled_57a0f5305a72745d222d9c047309c3a5920e84ff649d36a8c697d29dca384b04.png" title="Enter new name: a/c" width="960"/>
+                <img src="scaled_06c94e177f7c8c0e12ccae949af5dd4e42fa847c26d8ed881bbbcb24b974f8e8.png" title="Confirm edit: false: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

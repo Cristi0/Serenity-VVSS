@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: lab5.features.edit.EditFileName
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.884 sec - in lab5.features.edit.EditFileName
