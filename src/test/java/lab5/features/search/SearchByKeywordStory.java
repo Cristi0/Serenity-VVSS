@@ -50,15 +50,15 @@ public class SearchByKeywordStory {
         endUser.looks_for(getName());
         endUser.should_see_definition(getDefinition());
     }
-    @Test
-    public void searching_by_keyword_banana_should_display_the_corresponding_article() {
-        endUser.is_the_home_page();
-        endUser.looks_for("pear");
-        endUser.should_see_definition("An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.");
-    }
+//    @Test
+//    public void searching_by_keyword_banana_should_display_the_corresponding_article() {
+//        endUser.is_the_home_page();
+//        endUser.looks_for("pear");
+//        endUser.should_see_definition("An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.");
+//    }
 
-    @Pending
-    @Test
-    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
-    }
+//    @Pending
+//    @Test
+//    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
+//    }
 }
