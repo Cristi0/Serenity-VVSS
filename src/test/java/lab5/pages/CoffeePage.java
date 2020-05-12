@@ -168,11 +168,6 @@ public class CoffeePage extends PageObject
     {
         FileToUpload fileToUpload = new FileToUpload(getDriver(), filePath);
         fileToUpload.fromLocalMachine().to(getDriver().findElement(By.id("selectFiles")));
-        /*
-        @FindBy(id = "selectFiles")
-        private WebElementFacade selectFileButton;
-        doesnt exist when class is made so it needs to be found again
-         */
     }
 
     public boolean isConfirmUploadEnabled()

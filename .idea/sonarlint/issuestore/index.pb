@@ -1,8 +1,4 @@
 
-h
-8src/test/java/lab5/features/SearchByKeywordStoryDdt.java,b\0\b0020f5d085dddd6b643b84d2d2804c781302681
-\
-,src/test/java/lab5/pages/DictionaryPage.java,c\0\c05fdc1b9de2a2ab0ceec30557e89af5d6efebcc
 b
 2src/test/java/lab5/features/edit/EditFileName.java,4\0\40c8e346d92be5983066a7dd4695271021ec2b30
 X
