@@ -1,7 +1,9 @@
 
-A
-java:S2925D"$Remove this use of "Thread.sleep()".(ïÈ˜‚8õ¿ÌÈ .
-J
-java:S2699d"-Add at least one assertion to this test case.(¨ÙÕ©8õ¿ÌÈ .
 F
-java:S2925Z"$Remove this use of "Thread.sleep()".(€­íÜüÿÿÿÿ8á‘ÎÈ .
+java:S2925b"$Remove this use of "Thread.sleep()".(€­íÜüÿÿÿÿ8á‘ÎÈ .
+A
+java:S2925L"$Remove this use of "Thread.sleep()".(ïÈ˜‚8õ¿ÌÈ .
+F
+java:S2925-"$Remove this use of "Thread.sleep()".(€­íÜüÿÿÿÿ8êš¸É .
+J
+java:S2699l"-Add at least one assertion to this test case.(¨ÙÕ©8õ¿ÌÈ .

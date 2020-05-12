@@ -40,6 +40,14 @@ public class Scenario
         endUserSteps.openAddModal();
         endUserSteps.enterFolderNameForAdd(folderName);
         endUserSteps.confirmAdd();
+        try
+        {
+            Thread.sleep(500);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     private void enterLastFolder()
@@ -103,6 +111,7 @@ public class Scenario
         System.out.println("filePath   = " + filePath);
         System.out.println("newName    = " + newName);
         endUserSteps.reloadPage();
+
 
         createFolder();
         enterLastFolder();
