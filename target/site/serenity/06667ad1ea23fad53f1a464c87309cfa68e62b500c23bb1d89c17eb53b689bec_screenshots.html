@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="726b05aebb0b49b20102ec2fbbe9705aeb80eb6fe4ed1e16a9063e1b7034ad77.html">Scenario</a></span>
+                > <span class="truncate-60"><a
+                    href="06667ad1ea23fad53f1a464c87309cfa68e62b500c23bb1d89c17eb53b689bec.html">Scenario01 </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-05-2020 16:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Scenario</span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Scenario01
+                                    <span class="related-issue-title">(#Scenario-1)</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Reload page<br>Expand<br>Open add modal<br>Enter folder name for add: &lt;folder name&gt;<br>Confirm add<br>Double click last folder<br>Open upload modal<br>Select file for upload: &lt;file path&gt;<br>Confirm upload<br>Return ID of first file<br>Open edit modal: f334<br>Enter new name for edit: &lt;new name&gt;<br>Confirm edit: true<br>Return ID of last folder</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="201941784fb650a4469228559cb5ce6d1d65102e4bf88cd622b15e218144106b.png" title="Reload page" width="960"/>
+                <img src="8bb348b85d5e200465303d028639d86b75d56c7b1fdf7688bfce05f04dfbe46a.png" title="Expand" width="960"/>
+                <img src="scaled_31e48f0029253d1a23a3a9a07f229c08cbca79144094712fb4c2b1b19ce5886b.png" title="Open add modal" width="960"/>
+                <img src="af57452c0b3d5953034cc2084154a360354d2c36722368fa31202a1cd7898d20.png" title="Enter folder name for add: testFolder" width="960"/>
+                <img src="fc1b0aea4d00702e52a1973f3544b8e0646ac20210db3c597976b60e308981ce.png" title="Enter folder name for add: testFolder" width="960"/>
+                <img src="scaled_e7eb9e1d56632ee7b39d3e88e0bc3421fc7befed4ebaf84f860c4e8b60d164e6.png" title="Confirm add" width="960"/>
+                <img src="646aea96a420cc28b68899ef14f7324835a0b7693bc4370748bb04364f17d22c.png" title="Double click last folder" width="960"/>
+                <img src="33c3880e621bbd18d706fe3d5dfa25d7e91ddff3e86c53be940ab286d4667039.png" title="Double click last folder" width="960"/>
+                <img src="scaled_616dcb4ed2808a4e9a86eb60ecadf48689f7c5ea70f9c6d0872e61a0c4a4f459.png" title="Open upload modal" width="960"/>
+                <img src="74d5871a384bcd08aaf5d830a540f36820d2a81966ee766b9d83e12ba860fa19.png" title="Select file for upload: C:\drivers\plan.txt" width="960"/>
+                <img src="4a0d8bf75b2b7ceb9a0a11ae33153537803b667e67777321fda5ae4626f9c3ca.png" title="Select file for upload: C:\drivers\plan.txt" width="960"/>
+                <img src="scaled_53a7db376a8865d9b9ac7d5fb43948c277974ada191bd67af45540346fea023e.png" title="Confirm upload" width="960"/>
+                <img src="a149e541b5845cff01ebe48d7de5840574b1b7af33f0f29043bcc45131b995ca.png" title="Return ID of first file" width="960"/>
+                <img src="0f48842c8d48511a3aa4d7c8287ca8315bf3e850f72c985e3f2a8f7ac6c5080b.png" title="Open edit modal: f334" width="960"/>
+                <img src="e45ccc3f54a3215fedbf3870c76b4025f12e5f55f9a23d4a635a44981c943365.png" title="Enter new name for edit: fisier.txt" width="960"/>
+                <img src="scaled_25da2685409255c0f0e620c87f7cde7cea414a158cc7cea58e222b763c8d7603.png" title="Confirm edit: true" width="960"/>
+                <img src="a08630d89a557ad9fa9c547c3abe66c3d108ae13868fe4f206d37ae10846b832.png" title="Return ID of last folder: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

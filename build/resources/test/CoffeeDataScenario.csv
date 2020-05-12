@@ -1,0 +1,4 @@
+id,name,valid,
+f320,fisier.txt,true,
+f320,"a/c",false,
+f320,notepad.txt,true,

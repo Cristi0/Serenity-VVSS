@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityParameterizedRunner.class)
-@UseTestDataFrom("src/test/resources/CoffeeData.csv")
+@UseTestDataFrom("src/test/resources/CoffeeDataEdit.csv")
 public class EditFileName
 {
     @Managed(uniqueSession = true)
@@ -41,9 +41,9 @@ public class EditFileName
         System.out.println("name  = " + name);
         System.out.println("valid = " + valid);
         endUserSteps.reloadPage();
-        endUserSteps.enableEdit();
-        endUserSteps.openModal(id);
-        endUserSteps.enterNewName(name);
+        endUserSteps.expand();
+        endUserSteps.openEditModal(id);
+        endUserSteps.enterNewNameForEdit(name);
         endUserSteps.confirmEdit(Boolean.parseBoolean(valid));
     }
 

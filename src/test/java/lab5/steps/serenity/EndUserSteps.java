@@ -2,7 +2,6 @@ package lab5.steps.serenity;
 
 import lab5.pages.CoffeePage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.steps.ScenarioSteps;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -18,75 +17,119 @@ public class EndUserSteps
     }
 
     @Step
-    public void enableEdit()
+    public void expand()
     {
         coffeePage.expand();
-        try
-        {
-            Thread.sleep(500);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
+    }
+
+    @Step
+    public void openEditModal(String fileID)
+    {
         coffeePage.clickEdit();
+        coffeePage.clickFileOrFolder(fileID);
     }
 
     @Step
-    public void openModal(String fileID)
+    public void enterNewNameForEdit(String name)
     {
-        coffeePage.clickFile(fileID);
-        try
-        {
-            Thread.sleep(200);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-    @Step
-    public void enterNewName(String name)
-    {
-        coffeePage.writeNewName(name);
+        coffeePage.writeNewNameForEdit(name);
     }
 
     @Step
     public void confirmEdit(boolean isValid)
     {
-        assertThat(coffeePage.isConfirmEnabled(), is(isValid));
+        assertThat(coffeePage.isConfirmEditEnabled(), is(isValid));
         if (isValid)
             coffeePage.confirmEdit();
     }
 
-    /*
-    DictionaryPage dictionaryPage;
-
     @Step
-    public void enters(String keyword) {
-        dictionaryPage.enter_keywords(keyword);
+    public void openAddModal()
+    {
+        coffeePage.clickAddOption();
     }
 
     @Step
-    public void starts_search() {
-        dictionaryPage.lookup_terms();
+    public void enterFolderNameForAdd(String name)
+    {
+        coffeePage.writeFolderNameForAdd(name);
     }
 
     @Step
-    public void should_see_definition(String definition) {
-        assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
+    public void confirmAdd()
+    {
+        assertThat(coffeePage.isConfirmAddEnabled(), is(true));
+        coffeePage.confirmAdd();
     }
 
     @Step
-    public void is_the_home_page() {
-        dictionaryPage.open();
+    public String returnIDOfLastFolder()
+    {
+        return coffeePage.getLastFolder().getAttribute("id");
     }
 
     @Step
-    public void looks_for(String term) {
-        enters(term);
-        starts_search();
+    public void doubleClickLastFolder()
+    {
+        coffeePage.doubleClickLastFolder();
     }
-    */
+
+    @Step
+    public String returnIDOfFirstFile()
+    {
+        return coffeePage.getFirstFile().getAttribute("id");
+    }
+
+    @Step
+    public void openUploadModal()
+    {
+        coffeePage.openUploadModal();
+    }
+
+    @Step
+    public void selectFileForUpload(String filePath)
+    {
+        coffeePage.selectFileForUpload(filePath);
+    }
+
+    @Step
+    public void confirmUpload()
+    {
+        assertThat(coffeePage.isConfirmUploadEnabled(), is(true));
+        coffeePage.confirmUpload();
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        coffeePage.clickOkButton();
+    }
+
+    public void returnToRoot()
+    {
+        coffeePage.clickRoot();
+    }
+
+    public void enableDelete()
+    {
+        coffeePage.clickDelete();
+    }
+
+    public void clickFolder(String folderID)
+    {
+        coffeePage.clickFileOrFolder(folderID);
+    }
+
+    public void confirmAction()
+    {
+        coffeePage.confirmAction();
+    }
+
+    public boolean isCollapsed()
+    {
+        return coffeePage.isCollapsed();
+    }
 }
