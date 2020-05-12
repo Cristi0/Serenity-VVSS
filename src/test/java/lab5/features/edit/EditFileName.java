@@ -17,7 +17,7 @@ public class EditFileName
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
-    @ManagedPages(defaultUrl = "http://127.0.0.1:5005/")
+    @ManagedPages(defaultUrl = "http://rdgd95.go.ro:5005/")
     public Pages pages;
 
     @Steps

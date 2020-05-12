@@ -17,7 +17,7 @@ public class Scenario
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
-    @ManagedPages(defaultUrl = "http://localhost:5005/")
+    @ManagedPages(defaultUrl = "http://rdgd95.go.ro:5005/")
     public Pages pages;
 
     @Steps
